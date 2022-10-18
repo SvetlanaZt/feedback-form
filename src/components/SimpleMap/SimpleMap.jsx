@@ -4,13 +4,16 @@ import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 const containerStyle = {
   width: '970px',
   height: '970px',
-  left: '150px',
-  top: '-50px',
+  left: '10%',
+  top: '-150px',
+  borderRadius: '50%',
+  position: 'reletive',
 };
 
 const center = {
-  lat: 44,
-  lng: -88,
+  lat: 40.73,
+  lng: -73.93,
+  zoom: 12,
 };
 
 function SimpleMap() {
@@ -20,6 +23,7 @@ function SimpleMap() {
   });
 
   const [map, setMap] = React.useState(null);
+  console.log(map);
 
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);

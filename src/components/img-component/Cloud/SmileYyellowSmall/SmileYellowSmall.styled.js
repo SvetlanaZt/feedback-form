@@ -5,3 +5,9 @@ export const StyledImg = styled.img`
   position: absolute;
   right: -3%; ;
 `;
+
+export const StyledImgSmile = styled.img`
+  top: 3%;
+  position: absolute;
+  left: 3%; ;
+`;

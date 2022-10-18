@@ -1,6 +1,6 @@
 import img from 'img/smile-rose.png';
-import { StyledImg } from './SmileRose.styled';
+// import { StyledImg } from './SmileRose.styled';
 
-export default function SmileRose() {
-  return <StyledImg src={img} alt="Cloud"></StyledImg>;
+export default function SmileRose({ Img }) {
+  return <Img src={img} alt="Cloud"></Img>;
 }

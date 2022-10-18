@@ -1,5 +1,1 @@
-import styled from 'styled-components';
-
-export const StyledImg = styled.img`
-  position: absolute;
-`;
+// import styled from 'styled-components';
