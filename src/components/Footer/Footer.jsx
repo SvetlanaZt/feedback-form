@@ -1,5 +1,5 @@
 import svg from 'img/sprite.svg';
-import { StyledFDiv, StyledUl, StyledLi, StyledSvg } from './Footer.styled';
+import { StyledUl, StyledLi, StyledSvg } from './Footer.styled';
 
 export default function Footer() {
   return (

@@ -11,18 +11,18 @@ import {
 
 export default function Form({ onClick }) {
   const [name, setName] = useState('');
-  const [mail, setMail] = useState('');
-  const [text, setText] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const onSuubmit = evt => {
     evt.preventDefault();
-    onClick({ name, mail, text });
+    onClick({ name, email, message });
     reset();
   };
   const reset = () => {
     setName('');
-    setMail('');
-    setText('');
+    setEmail('');
+    setMessage('');
   };
   const onChange = evt => {
     const { name, value } = evt.target;
@@ -31,12 +31,12 @@ export default function Form({ onClick }) {
         setName(value);
         break;
 
-      case 'number':
-        setMail(value);
+      case 'email':
+        setEmail(value);
         break;
 
-      case 'text':
-        setText(value);
+      case 'message':
+        setMessage(value);
         break;
       default:
         return;
@@ -57,16 +57,16 @@ export default function Form({ onClick }) {
         <StyledInput
           onChange={onChange}
           type="text"
-          name="mail"
-          value={mail}
+          name="email"
+          value={email}
           placeholder="Your e-mail*"
           required
         />
         <StyledInputText
           onChange={onChange}
           type="text"
-          name="text"
-          value={text}
+          name="message"
+          value={message}
           placeholder="Your message*"
           required
         />

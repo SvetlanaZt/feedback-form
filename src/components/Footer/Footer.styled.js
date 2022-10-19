@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledFDiv = styled.div`
-  justify-content: center;
-`;
 export const StyledUl = styled.ul`
   list-style: none;
   display: flex;
